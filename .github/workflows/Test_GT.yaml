@@ -1,0 +1,19 @@
+name: "HCL AppScan SAST"
+on:
+  workflow_dispatch
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Run AppScan SAST scan
+        uses: HCL-TECH-SOFTWARE/appscan-sast-action@v1.0.5
+        with:
+          asoc_key: ${{secrets.ASOC_KEY}}
+          asoc_secret: ${{secrets.ASOC_SECRET}}
+          application_id: 1d4883a6-1e37-4a79-81a9-7b2b4230fbf5
+          scan_name: Test_Case
+          personal_scan: false
+          
+          
