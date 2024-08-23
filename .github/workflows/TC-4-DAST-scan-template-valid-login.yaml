@@ -8,12 +8,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Run ASoC DAST Scan
-        uses: HCL-TECH-SOFTWARE/appscan-dast-action@v1.0.5
+        uses: vishalhcl-5960/appscan-dast-action@ASA-9151
         with:
           baseurl:  https://cloud.appscan.com
           asoc_key: ${{secrets.ASOC_KEY}}
           asoc_secret: ${{secrets.ASOC_SECRET}}
-          application_id: acd3ef50-6276-461d-8514-abc6e7113577
+          application_id: 1d4883a6-1e37-4a79-81a9-7b2b4230fbf5
           scan_type: 'staging'
           dynamic_scan_type: upload
           scan_or_scant_file: 'altoro.scant'
