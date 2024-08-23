@@ -1,4 +1,5 @@
-name: "TC-4-DAST-scan-template-valid-login"
+name: "TC-7-DAST-ephemeral_presence_valid-login"
+
 on:
   workflow_dispatch
 jobs:
@@ -14,12 +15,9 @@ jobs:
           asoc_key: ${{secrets.ASOC_KEY}}
           asoc_secret: ${{secrets.ASOC_SECRET}}
           application_id: 1d4883a6-1e37-4a79-81a9-7b2b4230fbf5
-          dynamic_scan_type: upload
-          scan_or_scant_file: 'altoro.scant'
-          network: private
-          presence_id: f185efda-67bf-ed11-ba76-14cb65723612
-          fail_for_noncompliance: false
-          wait_for_analysis: true
+          dynamic_scan_type: dast
+          starting_URL: 'https://demo.testfire.net'
+          ephemeral_presence: true
       - uses: actions/upload-artifact@v3
         name: Upload HCL AppScan HTML Report to Github Artifacts
         with:
