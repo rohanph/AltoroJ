@@ -14,7 +14,7 @@ jobs:
           asoc_key: ${{secrets.ASOC_KEY}}
           asoc_secret: ${{secrets.ASOC_SECRET}}
           application_id: 1d4883a6-1e37-4a79-81a9-7b2b4230fbf5
-          dynamic_scan_type: upload
+          dynamic_scan_type: dast
           scan_or_scant_file: 'DTF.scant'
           network: private
           presence_id: 4d7dbbb3-76df-ee11-9f02-14cb65725114
