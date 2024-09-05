@@ -1,4 +1,4 @@
-name: "TC-4-DAST-scan-template-valid-login"
+name: "TC-3-Dast-basic-invalid-application-id"
 on:
   workflow_dispatch
 jobs:
@@ -11,13 +11,16 @@ jobs:
         uses: vishalhcl-5960/appscan-dast-action@ASA-9151
         with:
           baseurl:  https://cloud.appscan.com
-          asoc_key: ${{secrets.ASOC_KEY}}
-          asoc_secret: ${{secrets.ASOC_SECRET}}
-          application_id: 1d4883a6-1e37-4a79-81a9-7b2b4230fbf5
+          asoc_key: test
+          asoc_secret: test
+          application_id: 7d4883a6-te78-4a79-81a9-7z2b0037fbf5
+          scan_type: 'staging'
           dynamic_scan_type: dast
-          scan_or_scant_file: 'DTF.scant'
-          network: private
-          presence_id: 4d7dbbb3-76df-ee11-9f02-14cb65725114
+          starting_URL: 'https://demo.testfire.net?mode=demo'
+          login_method: userpass
+          login_user: jsmith
+          login_password: demo1234
+          network: public
           fail_for_noncompliance: false
           wait_for_analysis: true
       - uses: actions/upload-artifact@v3
