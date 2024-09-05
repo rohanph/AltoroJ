@@ -1,4 +1,4 @@
-name: "TC-9-Dast-basic-invalid-login_method.yaml"
+name: "TC-5-Dast-basic-invalid-login_method.yaml"
 on:
   workflow_dispatch
 jobs:

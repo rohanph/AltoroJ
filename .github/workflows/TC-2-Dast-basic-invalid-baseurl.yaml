@@ -1,4 +1,4 @@
-name: "TC-2-Dast-basic-invalid-url"
+name: "TC-2-Dast-basic-invalid-baseurl"
 on:
   workflow_dispatch
 jobs:
