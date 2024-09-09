@@ -16,7 +16,7 @@ jobs:
           application_id: 1d4883a6-1e37-4a79-81a9-7b2b4230fbf5
           scan_type: 'staging'
           dynamic_scan_type: upload
-          scan_or_scant_file: 'altoro.scant'
+          scan_or_scant_file: 'DTF.scant'
           network: private
           presence_id: f185efda-67bf-ed11-ba76-14cb65723612
           fail_for_noncompliance: false
