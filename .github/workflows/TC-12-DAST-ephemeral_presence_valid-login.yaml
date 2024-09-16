@@ -1,4 +1,4 @@
-name: "TC-12-DAST-ephemeral_presence_valid-login"
+name: "TC-12_1-DAST-ephemeral_presence_valid-login"
 
 on:
   workflow_dispatch
