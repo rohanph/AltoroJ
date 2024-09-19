@@ -1,4 +1,4 @@
-name: "TC-10-DAST-scan-template-invalid-application_id"
+name: "TC10-DAST-scan-template-invalid-application_id"
 on:
   workflow_dispatch
 jobs:

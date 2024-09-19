@@ -1,4 +1,4 @@
-name: "TC-9-DAST-scan-template-valid-login"
+name: "TC9-DAST-scan-template-valid-login"
 on:
   workflow_dispatch
 jobs:

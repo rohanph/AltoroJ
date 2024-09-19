@@ -1,4 +1,4 @@
-name: "TC-11-DAST-scan-template-invalid-dynamic-scan-type"
+name: "TC11-DAST-scan-template-invalid-dynamic-scan-type"
 on:
   workflow_dispatch
 jobs:

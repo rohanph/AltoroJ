@@ -1,4 +1,4 @@
-name: "TC-1-Dast-basic-valid-login"
+name: "TC1-Dast-basic-valid-login"
 on:
   workflow_dispatch
 jobs:
