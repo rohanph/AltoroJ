@@ -14,7 +14,6 @@ jobs:
           asoc_key: ${{secrets.ASOC_KEY}}
           asoc_secret: ${{secrets.ASOC_SECRET}}
           application_id: 1d4883a6-1e37-4a79-81a9-7b2b4230fbf5
-          scan_type: 'staging'
           dynamic_scan_type: dast
           starting_URL: 'https://demo.testfire.net?mode=demo'
           login_method: userpass
