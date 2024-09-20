@@ -1,4 +1,4 @@
-name: "TC12_1-DAST-ephemeral_presence_valid-login"
+name: "TC-12_1-DAST-ephemeral_presence_valid-login"
 
 on:
   workflow_dispatch
@@ -9,7 +9,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Run ASoC DAST Scan
-        uses: HCL-TECH-SOFTWARE/appscan-dast-action@main
+        uses: HCL-TECH-SOFTWARE/appscan-dast-action@v1.0.6
         with:
           baseurl:  https://cloud.appscan.com
           asoc_key: ${{secrets.ASOC_KEY}}
